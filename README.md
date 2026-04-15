@@ -1,4 +1,4 @@
-# Spider Web Simulation
+# Auto-repairing spider web
 
 ![Spider Web Simulation Demonstration](websclip.gif)
 
