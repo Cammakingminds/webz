@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  background: #0a0a12;
+  cursor: crosshair;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, rgba(16, 16, 28, 0.95), rgba(8, 8, 12, 1));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+}
+
+#overlay .content {
+  text-align: center;
+}
+
+#overlay h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  margin-bottom: 0.5rem;
+  color: #c0c8e0;
+  text-shadow: 0 0 20px rgba(100, 120, 200, 0.4);
+}
+
+#overlay p {
+  font-weight: 400;
+  font-size: 0.9rem;
+  letter-spacing: 0.1rem;
+  color: #707890;
+  text-transform: uppercase;
+}
+
+#overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
